@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/hyle/Documents/vscode/ClimuCore/build",
+  "command": "/usr/bin/c++  -I/home/hyle/Documents/vscode/ClimuCore/./imgui  -o CMakeFiles/ClimuCore.dir/src/main.cpp.o -c /home/hyle/Documents/vscode/ClimuCore/src/main.cpp",
+  "file": "/home/hyle/Documents/vscode/ClimuCore/src/main.cpp",
+  "output": "CMakeFiles/ClimuCore.dir/src/main.cpp.o"
+}
+]
