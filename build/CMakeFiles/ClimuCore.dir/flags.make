@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hyle/Documents/vscode/ClimuCore/./imgui
+CXX_INCLUDES = -I/home/hyle/Documents/code/ClimuCore/imgui -I/usr/include/GLFW
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++20
 

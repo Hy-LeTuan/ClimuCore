@@ -8,7 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hyle/Documents/vscode/ClimuCore/src/main.cpp" "CMakeFiles/ClimuCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/src/main.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/imgui/imgui.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/imgui/imgui_demo.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui_demo.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui_demo.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/imgui/imgui_draw.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui_draw.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui_draw.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/imgui/imgui_impl_glfw.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui_impl_glfw.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui_impl_glfw.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/imgui/imgui_impl_opengl3.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui_impl_opengl3.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui_impl_opengl3.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/imgui/imgui_tables.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui_tables.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/imgui/imgui_widgets.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui_widgets.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/src/main.cpp" "CMakeFiles/ClimuCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
