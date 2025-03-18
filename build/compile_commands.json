@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/hyle/Documents/code/ClimuCore/build",
+  "command": "/usr/bin/cc  -I/home/hyle/Documents/code/ClimuCore/imgui -I/usr/include/GLFW  -o CMakeFiles/ClimuCore.dir/src/glad.c.o -c /home/hyle/Documents/code/ClimuCore/src/glad.c",
+  "file": "/home/hyle/Documents/code/ClimuCore/src/glad.c",
+  "output": "CMakeFiles/ClimuCore.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/hyle/Documents/code/ClimuCore/build",
   "command": "/usr/bin/c++  -I/home/hyle/Documents/code/ClimuCore/imgui -I/usr/include/GLFW -std=gnu++20 -o CMakeFiles/ClimuCore.dir/src/main.cpp.o -c /home/hyle/Documents/code/ClimuCore/src/main.cpp",
   "file": "/home/hyle/Documents/code/ClimuCore/src/main.cpp",
   "output": "CMakeFiles/ClimuCore.dir/src/main.cpp.o"

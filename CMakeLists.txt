@@ -20,7 +20,7 @@ set(IMGUI_SOURCES
 )
 
 # Add executables
-add_executable(ClimuCore ./src/main.cpp ${IMGUI_SOURCES})
+add_executable(ClimuCore ./src/glad.c ./src/main.cpp ${IMGUI_SOURCES})
 
 # Find OpenGL
 find_package(OpenGL REQUIRED)

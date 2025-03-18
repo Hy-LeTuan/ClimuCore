@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClimuCore.dir/imgui/imgui_tables.cpp.o.d"
   "CMakeFiles/ClimuCore.dir/imgui/imgui_widgets.cpp.o"
   "CMakeFiles/ClimuCore.dir/imgui/imgui_widgets.cpp.o.d"
+  "CMakeFiles/ClimuCore.dir/src/glad.c.o"
+  "CMakeFiles/ClimuCore.dir/src/glad.c.o.d"
   "CMakeFiles/ClimuCore.dir/src/main.cpp.o"
   "CMakeFiles/ClimuCore.dir/src/main.cpp.o.d"
   "ClimuCore"
@@ -20,6 +22,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/ClimuCore.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

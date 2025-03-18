@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/hyle/Documents/code/ClimuCore/src/glad.c" "CMakeFiles/ClimuCore.dir/src/glad.c.o" "gcc" "CMakeFiles/ClimuCore.dir/src/glad.c.o.d"
   "/home/hyle/Documents/code/ClimuCore/imgui/imgui.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui.cpp.o.d"
   "/home/hyle/Documents/code/ClimuCore/imgui/imgui_demo.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui_demo.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui_demo.cpp.o.d"
   "/home/hyle/Documents/code/ClimuCore/imgui/imgui_draw.cpp" "CMakeFiles/ClimuCore.dir/imgui/imgui_draw.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/imgui/imgui_draw.cpp.o.d"

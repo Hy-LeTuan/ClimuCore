@@ -18,7 +18,7 @@ CMakeFiles/ClimuCore.dir/imgui/imgui_impl_glfw.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
  /home/hyle/Documents/code/ClimuCore/imgui/imgui_impl_glfw.h \
- /usr/include/GLFW/glfw3.h \
+ /usr/local/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
