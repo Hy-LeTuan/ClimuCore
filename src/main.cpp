@@ -45,10 +45,19 @@ int main() {
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
-
     glViewport(0, 0, WIDTH, HEIGHT);
-
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    float vertices[] = {-0.5f, -0.5f, 0.0f, 0.5f, -0.5f,
+                        0.0f,  0.0f,  0.5f, 0.0f};
+    unsigned int VBO;
+    glGenBuffers(1, &VBO);
+    std::cout << "VBO is: " << VBO << std::endl;
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+
+    // any call to GL_ARRAY_BUFFER will now refer to VBO
+    // copy vertices data to current bound buffer, which is VBO
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     while (!glfwWindowShouldClose(window)) {
         processInput(window);
