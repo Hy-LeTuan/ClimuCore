@@ -345,6 +345,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/shaders/shaders.o: src/shaders/shaders.cpp.o
+.PHONY : src/shaders/shaders.o
+
+# target to build an object file
+src/shaders/shaders.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o
+.PHONY : src/shaders/shaders.cpp.o
+
+src/shaders/shaders.i: src/shaders/shaders.cpp.i
+.PHONY : src/shaders/shaders.i
+
+# target to preprocess a source file
+src/shaders/shaders.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.i
+.PHONY : src/shaders/shaders.cpp.i
+
+src/shaders/shaders.s: src/shaders/shaders.cpp.s
+.PHONY : src/shaders/shaders.s
+
+# target to generate assembly for a file
+src/shaders/shaders.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.s
+.PHONY : src/shaders/shaders.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -381,6 +405,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/shaders/shaders.o"
+	@echo "... src/shaders/shaders.i"
+	@echo "... src/shaders/shaders.s"
 .PHONY : help
 
 

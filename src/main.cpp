@@ -5,6 +5,8 @@
 #include <iostream>
 #include <numbers>
 
+#include <shader_s.h>
+
 const int WIDTH = 800;
 const int HEIGHT = 600;
 
@@ -54,9 +56,10 @@ int main() {
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     float vertices[] = {
-        -0.5f, 0.0f,  0.0f, // second triangle corner
-        0.0f,  -0.5f, 0.0f, // second triangle corner
-        0.5f,  0.0f,  0.0f  // second triangle corner
+        // positions // colors
+        0.5f,  -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, // bottom right
+        -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, // bottom left
+        0.0f,  0.5f,  0.0f, 0.0f, 0.0f, 1.0f, 1.0f  // top
     };
 
     float vertices2[] = {
@@ -64,12 +67,6 @@ int main() {
         0.0f,  0.5f, 0.0f, // second triangle corner
         0.5f,  0.0f, 0.0f  // second triangle corner
     };
-
-    // unsigned int indices[] = {
-    //     // note that we start from 0!
-    //     0, 1, 3, // first triangle
-    //     1, 2, 3  // second triangle
-    // };
 
     unsigned int VBO;
     glGenBuffers(1, &VBO);
@@ -83,11 +80,12 @@ int main() {
     const char *vertexShaderSource =
         "#version 460 core\n"
         "layout (location = 0) in vec3 aPos;\n"
-        "out vec4 vertexColor;"
+        "layout (location = 1) in vec4 aColor;\n"
+        "out vec4 vertexColor;\n"
         "void main()\n"
         "{\n"
         "gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-        "vertexColor = vec4(1.0f,0.5f, 0.2f, 1.0f);\n"
+        "vertexColor = aColor;\n"
         "}\n";
     unsigned int vertexShader;
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -164,8 +162,9 @@ int main() {
     glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
     if (!success) {
         glGetShaderInfoLog(shaderProgram, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::PROGRAM::LINK_FAILED\n"
-                  << infoLog << std::endl;
+        std::cout
+            << "ERROR::SHADER::PROGRAM::SHADER_PROGRAM_YELLOW::LINK_FAILED\n"
+            << infoLog << std::endl;
     }
 
     // delete shader after linking
@@ -187,15 +186,17 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT);
 
         // render
-        glUseProgram(shaderProgram);
-
         glBindBuffer(GL_ARRAY_BUFFER, VBO);
         glBindVertexArray(VAO);
         glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices,
                      GL_STATIC_DRAW);
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float),
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 7 * sizeof(float),
                               (void *)0);
+        glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 7 * sizeof(float),
+                              (void *)(3 * sizeof(float)));
+
         glEnableVertexAttribArray(0);
+        glEnableVertexAttribArray(1);
 
         glUseProgram(shaderProgram);
 
@@ -207,10 +208,11 @@ int main() {
                      GL_STATIC_DRAW);
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float),
                               (void *)0);
+        // glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 7 * sizeof(float),
+        // (void *)0);
         glEnableVertexAttribArray(0);
+        // glEnableVertexAttribArray(1);
 
-        // use has to happen before searching for uniform, else OpenGL doesn't
-        // know what to search for
         glUseProgram(shaderProgramYellow);
 
         // compute color
@@ -228,8 +230,6 @@ int main() {
         glUniform4f(vertexColorLocation, redValue, greenValue, blueValue, 1.0f);
 
         glDrawArrays(GL_TRIANGLES, 0, 3);
-
-        // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         glfwSwapBuffers(window);
         glfwPollEvents();

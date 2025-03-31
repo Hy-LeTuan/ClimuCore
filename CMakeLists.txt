@@ -20,13 +20,14 @@ set(IMGUI_SOURCES
 )
 
 # Add executables
-add_executable(ClimuCore ./src/glad.c ./src/main.cpp ${IMGUI_SOURCES})
+add_executable(ClimuCore ./src/glad.c ./src/shaders/shaders.cpp ./src/main.cpp ${IMGUI_SOURCES})
 
 # Find OpenGL
 find_package(OpenGL REQUIRED)
 
 # Add include directories
 target_include_directories(ClimuCore PUBLIC imgui)
+target_include_directories(ClimuCore PUBLIC includes/)
 target_include_directories(ClimuCore PRIVATE /usr/include/GLFW/)
 
 # Link libraries

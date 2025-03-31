@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/g++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/hyle/Documents/code/ClimuCore/imgui -I/usr/include/GLFW
+C_INCLUDES = -I/home/hyle/Documents/code/ClimuCore/imgui -I/home/hyle/Documents/code/ClimuCore/includes -I/usr/include/GLFW
 
 C_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hyle/Documents/code/ClimuCore/imgui -I/usr/include/GLFW
+CXX_INCLUDES = -I/home/hyle/Documents/code/ClimuCore/imgui -I/home/hyle/Documents/code/ClimuCore/includes -I/usr/include/GLFW
 
 CXX_FLAGS = -g -std=gnu++20
 
