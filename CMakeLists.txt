@@ -19,8 +19,11 @@ set(IMGUI_SOURCES
     ./imgui/imgui_impl_opengl3.cpp
 )
 
+set(SHADER_SOURCES ./src/shaders/shaders.cpp)
+set(TEXTURE_SOURCES ./src/texture/stb_image.cpp)
+
 # Add executables
-add_executable(ClimuCore ./src/glad.c ./src/shaders/shaders.cpp ./src/main.cpp ${IMGUI_SOURCES})
+add_executable(ClimuCore ./src/glad.c ./src/main.cpp ${IMGUI_SOURCES} ${SHADER_SOURCES} ${TEXTURE_SOURCES})
 
 # Find OpenGL
 find_package(OpenGL REQUIRED)

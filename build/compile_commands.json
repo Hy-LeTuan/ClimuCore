@@ -7,12 +7,6 @@
 },
 {
   "directory": "/home/hyle/Documents/code/ClimuCore/build",
-  "command": "/usr/bin/g++  -I/home/hyle/Documents/code/ClimuCore/imgui -I/home/hyle/Documents/code/ClimuCore/includes -I/usr/include/GLFW -g -std=gnu++20 -o CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o -c /home/hyle/Documents/code/ClimuCore/src/shaders/shaders.cpp",
-  "file": "/home/hyle/Documents/code/ClimuCore/src/shaders/shaders.cpp",
-  "output": "CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o"
-},
-{
-  "directory": "/home/hyle/Documents/code/ClimuCore/build",
   "command": "/usr/bin/g++  -I/home/hyle/Documents/code/ClimuCore/imgui -I/home/hyle/Documents/code/ClimuCore/includes -I/usr/include/GLFW -g -std=gnu++20 -o CMakeFiles/ClimuCore.dir/src/main.cpp.o -c /home/hyle/Documents/code/ClimuCore/src/main.cpp",
   "file": "/home/hyle/Documents/code/ClimuCore/src/main.cpp",
   "output": "CMakeFiles/ClimuCore.dir/src/main.cpp.o"
@@ -58,5 +52,17 @@
   "command": "/usr/bin/g++  -I/home/hyle/Documents/code/ClimuCore/imgui -I/home/hyle/Documents/code/ClimuCore/includes -I/usr/include/GLFW -g -std=gnu++20 -o CMakeFiles/ClimuCore.dir/imgui/imgui_impl_opengl3.cpp.o -c /home/hyle/Documents/code/ClimuCore/imgui/imgui_impl_opengl3.cpp",
   "file": "/home/hyle/Documents/code/ClimuCore/imgui/imgui_impl_opengl3.cpp",
   "output": "CMakeFiles/ClimuCore.dir/imgui/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/home/hyle/Documents/code/ClimuCore/build",
+  "command": "/usr/bin/g++  -I/home/hyle/Documents/code/ClimuCore/imgui -I/home/hyle/Documents/code/ClimuCore/includes -I/usr/include/GLFW -g -std=gnu++20 -o CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o -c /home/hyle/Documents/code/ClimuCore/src/shaders/shaders.cpp",
+  "file": "/home/hyle/Documents/code/ClimuCore/src/shaders/shaders.cpp",
+  "output": "CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o"
+},
+{
+  "directory": "/home/hyle/Documents/code/ClimuCore/build",
+  "command": "/usr/bin/g++  -I/home/hyle/Documents/code/ClimuCore/imgui -I/home/hyle/Documents/code/ClimuCore/includes -I/usr/include/GLFW -g -std=gnu++20 -o CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.o -c /home/hyle/Documents/code/ClimuCore/src/texture/stb_image.cpp",
+  "file": "/home/hyle/Documents/code/ClimuCore/src/texture/stb_image.cpp",
+  "output": "CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.o"
 }
 ]

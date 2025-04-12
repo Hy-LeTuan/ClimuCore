@@ -369,6 +369,30 @@ src/shaders/shaders.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.s
 .PHONY : src/shaders/shaders.cpp.s
 
+src/texture/stb_image.o: src/texture/stb_image.cpp.o
+.PHONY : src/texture/stb_image.o
+
+# target to build an object file
+src/texture/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.o
+.PHONY : src/texture/stb_image.cpp.o
+
+src/texture/stb_image.i: src/texture/stb_image.cpp.i
+.PHONY : src/texture/stb_image.i
+
+# target to preprocess a source file
+src/texture/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.i
+.PHONY : src/texture/stb_image.cpp.i
+
+src/texture/stb_image.s: src/texture/stb_image.cpp.s
+.PHONY : src/texture/stb_image.s
+
+# target to generate assembly for a file
+src/texture/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.s
+.PHONY : src/texture/stb_image.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -408,6 +432,9 @@ help:
 	@echo "... src/shaders/shaders.o"
 	@echo "... src/shaders/shaders.i"
 	@echo "... src/shaders/shaders.s"
+	@echo "... src/texture/stb_image.o"
+	@echo "... src/texture/stb_image.i"
+	@echo "... src/texture/stb_image.s"
 .PHONY : help
 
 

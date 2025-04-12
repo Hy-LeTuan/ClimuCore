@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClimuCore.dir/src/main.cpp.o.d"
   "CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o"
   "CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o.d"
+  "CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.o"
+  "CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.o.d"
   "ClimuCore"
   "ClimuCore.pdb"
 )
