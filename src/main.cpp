@@ -112,6 +112,7 @@ int main() {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
+    stbi_set_flip_vertically_on_load(true);
     unsigned char *data2 = stbi_load("../src/assets/textures/awesomeface.png",
                                      &width, &height, &nrChannels, 0);
     if (data2) {
@@ -121,6 +122,7 @@ int main() {
     } else {
         std::cout << "Failed to load texture" << std::endl;
     }
+
     stbi_image_free(data2);
 
     Shader::Shader standardShader =
@@ -128,6 +130,7 @@ int main() {
                        "../src/assets/shaders/fragment_shader.frag");
 
     standardShader.use();
+
     glUniform1i(glGetUniformLocation(standardShader.ID, "texture1"), 0);
     standardShader.setInt("texture2", 1);
 
@@ -139,12 +142,12 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT);
 
         // render
+        standardShader.use();
+
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, texture1);
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, texture2);
-
-        standardShader.use();
 
         glBindVertexArray(VAO);
 
@@ -155,8 +158,6 @@ int main() {
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices,
                      GL_STATIC_DRAW);
-
-        glBindTexture(GL_TEXTURE_2D, texture1);
 
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 9 * sizeof(float),
                               (void *)0);
