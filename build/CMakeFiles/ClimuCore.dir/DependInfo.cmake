@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hyle/Documents/code/ClimuCore/src/main.cpp" "CMakeFiles/ClimuCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/src/main.cpp.o.d"
   "/home/hyle/Documents/code/ClimuCore/src/shaders/shaders.cpp" "CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/src/shaders/shaders.cpp.o.d"
   "/home/hyle/Documents/code/ClimuCore/src/texture/stb_image.cpp" "CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.o.d"
+  "/home/hyle/Documents/code/ClimuCore/src/utils/log_utils.cpp" "CMakeFiles/ClimuCore.dir/src/utils/log_utils.cpp.o" "gcc" "CMakeFiles/ClimuCore.dir/src/utils/log_utils.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

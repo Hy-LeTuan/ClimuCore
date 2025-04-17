@@ -1,7 +1,11 @@
 CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /home/hyle/Documents/code/ClimuCore/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/13/cmath \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/stdc-predef.h \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/matrix_transform.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../gtc/constants.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../gtc/../ext/scalar_constants.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../gtc/../ext/../detail/setup.hpp \
+ /usr/include/c++/13/cassert \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,13 +16,41 @@ CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h \
- /usr/include/c++/13/bits/cpp_type_traits.h \
- /usr/include/c++/13/ext/type_traits.h /usr/include/math.h \
+ /usr/include/c++/13/pstl/pstl_config.h /usr/include/assert.h \
+ /usr/include/c++/13/cstddef \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../gtc/../ext/../detail/../simd/platform.h \
+ /usr/include/c++/13/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/type_traits \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../gtc/../ext/scalar_constants.inl \
+ /usr/include/c++/13/limits \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../gtc/constants.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../geometric.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/type_vec3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/qualifier.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/type_vec3.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/compute_vector_relational.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/func_geometric.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../exponential.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/type_vec1.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/type_vec1.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/type_vec2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/type_vec2.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/type_vec4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/type_vec4.inl \
+ /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/c++/13/bits/cpp_type_traits.h \
+ /usr/include/c++/13/ext/type_traits.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -31,7 +63,6 @@ CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/13/bits/std_abs.h /usr/include/stdlib.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
@@ -40,8 +71,7 @@ CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -64,9 +94,9 @@ CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/functexcept.h \
  /usr/include/c++/13/bits/exception_defines.h \
  /usr/include/c++/13/ext/numeric_traits.h \
- /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/type_traits \
- /usr/include/c++/13/bits/move.h /usr/include/c++/13/bits/utility.h \
- /usr/include/c++/13/compare /usr/include/c++/13/concepts \
+ /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/bits/move.h \
+ /usr/include/c++/13/bits/utility.h /usr/include/c++/13/compare \
+ /usr/include/c++/13/concepts \
  /usr/include/c++/13/bits/stl_iterator_base_types.h \
  /usr/include/c++/13/bits/iterator_concepts.h \
  /usr/include/c++/13/bits/ptr_traits.h \
@@ -79,7 +109,7 @@ CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_construct.h \
  /usr/include/c++/13/debug/debug.h \
  /usr/include/c++/13/bits/predefined_ops.h /usr/include/c++/13/bit \
- /usr/include/c++/13/limits /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/gamma.tcc \
  /usr/include/c++/13/tr1/special_function_util.h \
  /usr/include/c++/13/tr1/bessel_function.tcc \
  /usr/include/c++/13/tr1/beta_function.tcc \
@@ -90,15 +120,128 @@ CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/glad/glad.h \
- /usr/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/GL/gl.h \
- /usr/local/include/GLFW/glfw3.h /usr/include/c++/13/iostream \
- /usr/include/c++/13/ostream /usr/include/c++/13/ios \
- /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/func_exponential.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/../vector_relational.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/../detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/../detail/func_vector_relational.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/_vectorize.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../common.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/_fixes.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/func_common.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/compute_common.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/../detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../trigonometric.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/func_trigonometric.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../matrix.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../vec2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_bool2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_bool2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_float2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_float2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_double2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_double2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_int2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_int2_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../ext/scalar_int_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../ext/../detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_uint2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_uint2_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../ext/scalar_uint_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../vec3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_bool3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_bool3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_float3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_float3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_double3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_double3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_int3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_int3_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_uint3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_uint3_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../vec4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_bool4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_bool4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_float4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_float4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_double4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_double4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_int4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_int4_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_uint4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/vector_uint4_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat2x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double2x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat2x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat2x2.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double2x2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float2x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float2x2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat2x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double2x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat2x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat2x3.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double2x3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float2x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float2x3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat2x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double2x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat2x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat2x4.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double2x4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float2x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float2x4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat3x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double3x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat3x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat3x2.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double3x2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float3x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float3x2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat3x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double3x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat3x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat3x3.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double3x3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float3x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float3x3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat3x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double3x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat3x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat3x4.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double3x4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float3x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float3x4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat4x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double4x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat4x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat4x2.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double4x2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float4x2.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float4x2_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat4x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double4x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat4x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat4x3.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double4x3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float4x3.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float4x3_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../mat4x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double4x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat4x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/../detail/type_mat4x4.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_double4x4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float4x4.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/.././ext/matrix_float4x4_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/../detail/func_matrix.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/ext/matrix_transform.inl \
+ /usr/include/glad/glad.h /usr/include/KHR/khrplatform.h \
+ /usr/include/GL/gl.h /usr/local/include/GLFW/glfw3.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
+ /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
+ /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h /usr/include/c++/13/bits/postypes.h \
  /usr/include/c++/13/cwchar /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
@@ -165,7 +308,7 @@ CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
+ /usr/include/c++/13/bits/memory_resource.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/ranges_util.h \
@@ -186,4 +329,71 @@ CMakeFiles/ClimuCore.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/istream.tcc \
  /home/hyle/Documents/code/ClimuCore/includes/stb_image.h \
  /usr/include/c++/13/stdlib.h \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/glm.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/detail/_fixes.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/detail/setup.hpp \
+ /usr/include/c++/13/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/13/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/fwd.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/packing.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/detail/func_packing.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/detail/type_half.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/detail/type_half.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/integer.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/detail/func_integer.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/matrix_transform.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../ext/matrix_projection.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../ext/matrix_projection.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../ext/matrix_clip_space.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../ext/matrix_clip_space.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/matrix_transform.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/type_ptr.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/quaternion.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_relational.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_relational.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/../detail/type_float.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/../detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_common.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_common.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_float.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/../detail/type_quat.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/../detail/type_quat.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_float_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_double.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_double_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_trigonometric.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_trigonometric.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_transform.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/quaternion_transform.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/quaternion.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/epsilon.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../detail/setup.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/epsilon.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/vec1.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_bool1.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_bool1_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_float1.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_float1_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_double1.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_double1_precision.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_int1.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_int1_sized.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_uint1.hpp \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
+ /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/hyle/Documents/code/ClimuCore/includes/glm/gtc/type_ptr.inl \
+ /home/hyle/Documents/code/ClimuCore/includes/utils/log_utils.h \
  /home/hyle/Documents/code/ClimuCore/includes/shader_s.h

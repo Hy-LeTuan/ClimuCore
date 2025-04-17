@@ -393,6 +393,30 @@ src/texture/stb_image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/texture/stb_image.cpp.s
 .PHONY : src/texture/stb_image.cpp.s
 
+src/utils/log_utils.o: src/utils/log_utils.cpp.o
+.PHONY : src/utils/log_utils.o
+
+# target to build an object file
+src/utils/log_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/utils/log_utils.cpp.o
+.PHONY : src/utils/log_utils.cpp.o
+
+src/utils/log_utils.i: src/utils/log_utils.cpp.i
+.PHONY : src/utils/log_utils.i
+
+# target to preprocess a source file
+src/utils/log_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/utils/log_utils.cpp.i
+.PHONY : src/utils/log_utils.cpp.i
+
+src/utils/log_utils.s: src/utils/log_utils.cpp.s
+.PHONY : src/utils/log_utils.s
+
+# target to generate assembly for a file
+src/utils/log_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClimuCore.dir/build.make CMakeFiles/ClimuCore.dir/src/utils/log_utils.cpp.s
+.PHONY : src/utils/log_utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -435,6 +459,9 @@ help:
 	@echo "... src/texture/stb_image.o"
 	@echo "... src/texture/stb_image.i"
 	@echo "... src/texture/stb_image.s"
+	@echo "... src/utils/log_utils.o"
+	@echo "... src/utils/log_utils.i"
+	@echo "... src/utils/log_utils.s"
 .PHONY : help
 
 
