@@ -744,7 +744,7 @@ static int stbi__cpuid3(void)
       cpuid
       mov  res,edx
    }
-   return res;
+  return res;
 }
 #endif
 
