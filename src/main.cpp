@@ -90,15 +90,19 @@ int main() {
 
     shader.use();
 
-    glm::vec3 translateAmount = glm::vec3(0.05f, 0.0f, 0.0f);
-    glm::mat4 identity = glm::mat4(1.0f);
-    glm::mat4 translate = glm::translate(identity, translateAmount);
-
-    glUniformMatrix4fv(glGetUniformLocation(shader.ID, "translate"), 1,
-                       GL_FALSE, glm::value_ptr(translate));
-
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
+
+    float speedX = 0.05f;
+    float speedY = 0.0f;
+    float speedZ = 0.0f;
+
+    glm::vec3 speedVector = glm::vec3(speedX, speedY, speedZ);
+    glm::mat4 identity = glm::mat4(1.0f);
+
+    glm::vec3 offSet = glm::vec3(0.0f, 0.0f, 0.0f);
+
+    GLint translateLocation = glGetUniformLocation(shader.ID, "translate");
 
     while (!glfwWindowShouldClose(window)) {
         processInput(window);
@@ -107,12 +111,25 @@ int main() {
         glClearColor(30.0 / 255, 30.0 / 255, 30.0 / 255, 1);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // render
+        // calculate deltatime
         float currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
+        // calculate translation
+        glm::mat4 translate = glm::translate(identity, offSet);
+        translate = glm::rotate(translate, glm::radians(45.0f),
+                                glm::vec3(0.0, 0.0, 1.0));
+
+        // update it inside the matrix
+        glUniformMatrix4fv(translateLocation, 1, GL_FALSE,
+                           glm::value_ptr(translate));
+
+        // render
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+        // update variables
+        offSet += speedVector * deltaTime;
 
         // swap buffer
         glfwSwapBuffers(window);
